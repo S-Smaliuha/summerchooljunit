@@ -53,8 +53,8 @@ public class Rectangle {
         }
     }
 
-    public boolean GetWidth(){
-        if(this.getWidth() == 0){
+    public boolean isLine(){
+        if(this.getWidth() == 0 | this.getLength() == 0){
             return true;
         }else {
             return false;

@@ -12,22 +12,22 @@ public class RectangleTest extends TestCase {
     }
 
     public void testGetPerimetr() {
-        main.java.Rectangle rectangle = new Rectangle(5, 5);
-        Assert.assertEquals(25, rectangle.getArea());
+        main.java.Rectangle rectangle = new Rectangle(1, 5);
+        Assert.assertEquals(5, rectangle.getArea());
     }
 
     public void testGetDiagonal() {
-        main.java.Rectangle rectangle = new Rectangle(5,5);
-        Assert.assertEquals(25, rectangle.getArea());
+        main.java.Rectangle rectangle = new Rectangle(5,2);
+        Assert.assertEquals(10, rectangle.getArea());
     }
 
     public void testisQuadrat() {
-        main.java.Rectangle rectangle = new Rectangle(5,5);
-        Assert.assertEquals(true, rectangle.isQuadrat());
+        main.java.Rectangle rectangle = new Rectangle(4,5);
+        Assert.assertEquals(false, rectangle.isQuadrat());
     }
 
-    public void testGetWidth() {
-        main.java.Rectangle rectangle = new Rectangle(5,0);
-        Assert.assertEquals(0, rectangle.getWidth());
+    public void testIsLine() {
+        main.java.Rectangle rectangle = new Rectangle(0,1);
+        Assert.assertEquals(true, rectangle.isLine());
     }
 }
